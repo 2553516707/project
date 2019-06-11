@@ -1,0 +1,28 @@
+node :
+什么是node：
+node是一个让javaScript运行在服务器的平台
+node的特点：
+单线程  非阻塞I/O   事件驱动（事件驱动）
+老3p    php asp jsp 8g  4000    node 8g 40000
+node是单线程    但是并发行高    高性能 =》非阻塞I/O 事件驱动
+
+创建一个服务器：
+http模块
+形参和实参：
+形参：通过一个变量接收具有实际意义的值（可更改）
+实参：具有实际意义的值，（不可以更改）
+createServer(callback)   callback(请求，响应) {执行体}
+发起http
+req: url 请求的路径
+url模块
+parse 解析：1.字符串 2.对象 需要多传入一个参数（true）
+    query 接收get请求发送过来的值
+resolve：解析路径   俩个参数    会把后一个参数拼接在域名上
+format：把对象转化为字符串
+结束响应  res.end() 需要参数，参数为字符串类型
+解决乱码：
+res.writeHead(200,{"Content-Type":"text/html;charset=UTF8"})
+text/palin  文本
+text/css    css
+images/png  图片
+listen()    监听端口 俩个  一个为端口，第二个为回调函数

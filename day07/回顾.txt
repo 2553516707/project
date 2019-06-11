@@ -1,0 +1,43 @@
+express
+简介：
+基于node.js封装的上层服务框架
+特点：由中间件和路由，http动态渲染工具
+视图动态渲染
+提供了简便的Api
+中间件：
+body-parser     处理post请求
+如何让使用中间件：
+1.加载  require
+2.使用中间件    app.use     
+app.use(bodyparser.json())  处理json数据
+bodyparser.urlencoded({extended:false}) 处理字符串
+
+码云：svn和git
+
+svn:    代码管理仓库
+俩区：
+本地    服务
+git     代码管理仓库    分布式管理
+三端：
+本地区   暂存区   服务区
+操作git
+可视化
+soucetree
+命令行
+git  base   here  命令
+git Fui here 可视化
+
+git init 项目初始化  .git
+git status  状态
+git add 文件名 (big.txt)  添加文件   git add.所有
+git commit -m "注释"  提交
+登陆
+git config user.name  "用户名"
+git config user.password  "密码"
+git remote  add  origin  仓库地址   链接远程仓库
+git push -u origin master   推送到远端   -u origin master(仅针对于第一次提交)
+git push
+cmd
+
+github  仓库
+

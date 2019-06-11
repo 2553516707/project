@@ -1,0 +1,7 @@
+express    框架
+简介：
+基于node.js封装的上层服务框架，提供了简便的Api和功能方法，主要内容有路由，中间件    
+、同时提供了更多的http工具，使得动态渲染试图，添加方便.
+
+npm install express --save
+npm install body-parser --save

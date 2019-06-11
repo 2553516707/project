@@ -1,0 +1,41 @@
+ 模板引擎 
+  ejs(高效的JavaScript模板引擎)  art-template  jade 代码不友好 =》 pug  swig
+  什么是模板引擎：
+       页面数据分离(从后端读取到的数据和文件映射在html页面)
+       生成最终的视图文档
+  ejs  => 模板引擎  
+       特性：高效(速度快)
+           1.快速编译(compiler)和输出(<%=%>)
+           2.简洁的模板标签<%%>
+           3.引入模板片段include 包含
+           4.同时支持服务器端(node)和浏览器环境(brower)
+           5.兼容express试图系统
+  使用:
+       包管理工具：   npm   cnpm   nrm
+       
+       下载环境
+           生产环境    production             dependence     --save -S
+           开发环境    dev production          devdependence  --save-dev -D
+          npm install  ejs --save
+       什么时候把包应下载到生产环境
+  
+  
+ 初始化  npm init      自定义
+            npm init -y   默认
+
+art-template
+npm install art-template --save
+文件后缀    .art
+传统语法    <%%>
+标准语法    {{}}    插值表达式
+作业：
+foreach     map     filter 的区别：
+ejs include如何使用?
+res.end和res.send的区别？
+    简单来说就是   如果服务器端没有数据返回到客户端 那么就可以用 res.end
+    但是 如果 服务器端有数据返回到客户端 这个时候必须用res.send ,不能用 res.end（会报错）
+
+
+express
+npm install express --save
+

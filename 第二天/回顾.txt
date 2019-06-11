@@ -1,0 +1,46 @@
+回顾：
+
+fs
+
+文件 file
+
+    {"flag":"a"}
+
+    r:read
+    w:write
+
+目录 dir
+
+    mkdir
+    rmdir
+    rename
+    stat    判断文件的状态  stats isfile()  idDirectory()
+
+暴露：
+module.exports
+
+exports
+
+作用;
+把一个文件抛出，从而使得可以让另一个文件使用
+
+使用：
+
+require()
+
+module.exports和exports和export和export default require import
+
+node采用的都是模块机制，由多个模块拼接而成  common.js模块化机制
+node:module.exports和exports    require
+ES6:export和export default  import
+
+module.exports和exports的区别：
+
+    exports是module.exports的引用
+    exports和module.exports相等
+    module.exports和exports都是一个空对象,占用同一块内存
+
+node 最大的优点：
+    高性能 高并发
+node 可以不单独使用 中间件 
+
